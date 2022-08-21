@@ -17,6 +17,17 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%);
+    object-fit: contain;
+    width: 300px;
+}
+
+@media only screen and (max-width:700px){
+    .logo {
+        position: static;
+        transform: translate(0%);
+        width: 200px;
+        object-fit: contain;
+    }
 }
 
 @media only screen and(max-width:600px){
@@ -53,19 +64,23 @@ header {
     margin: 10x;
     padding: 10px;
     justify-content: space-between;
+    gap: 20px;
+}
+.eldenring-video {
+    width: 700px;
+    margin: 0 auto;
 }
 
-
+.video-container {
+    display: flex;
+}
 
 @media only screen and (max-width:600px){
     .eldenring-video {
         margin: 1em 2em;
+        width: 100%;
     }
-    .eldenring-video{
-   
 }
-}
-
 
 h1{
     color:white;
@@ -74,20 +89,26 @@ h1{
     margin-right: 100px;
 }
 
+.image {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 300px;
+    justify-content: center;
+    gap: 50px;
+}
+
 .container{
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-.item{
-    flex: 1;
+    justify-content: center;
+    gap: 50px;
 }
 
 @media only screen and (min-width:600px){
     .container {
         flex-direction: row;
+        flex-wrap: wrap;
     }
   }
 
@@ -101,8 +122,10 @@ h1{
 @media only screen and (min-width:600px){
     .cta-all {
         flex-direction: row;
+        color: white;
     }
     .cta-all{
+        color: white;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -112,8 +135,11 @@ h1{
     }
 }
 
-   
-@media only screen and (min-width:600px){
+a{
+    color: white
+}
+
+   @media only screen and (min-width:600px){
     .cta {
         flex-direction: row;
     }
@@ -127,6 +153,10 @@ h1{
     width: 250px;
     height: 30px;
 }
+}
+
+a{
+    color: white
 }
 
 @media only screen and (min-width:600px){
