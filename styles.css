@@ -21,7 +21,7 @@ header {
 
 @media all and (max-width: 420px){
     .logo {
-        
+        flex-direction: column;
     }
 }
 
@@ -112,6 +112,12 @@ h2{
     margin-right: 100px;
 }
 
+@media all and (max-width: 420px){
+    .cta-all {
+        flex-direction: row;
+    }
+}
+
 .cta{
     background-image: linear-gradient(#1D2441, #5B859E);
     color: white;
@@ -123,9 +129,8 @@ h2{
     height: 30px;
 }
    
-
-@media only screen and (min-width: 600px){
-    .container {
+@media all and (max-width: 420px){
+    .cta {
         flex-direction: row;
     }
 }
@@ -137,6 +142,12 @@ h2{
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
+}
+
+@media all and (max-width: 420px){
+    .media {
+        size: 70%;
+    }
 }
 
 .media-logo {
