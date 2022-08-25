@@ -14,55 +14,24 @@ header {
 .logo {
     display: block;
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
     object-fit: contain;
     width: 300px;
+    
 }
 
-@media only screen and (max-width:700px){
-    .logo {
-        position: static;
-        transform: translate(0%);
-        width: 200px;
-        object-fit: contain;
-    }
-}
-
-@media only screen and(max-width:600px){
-    .search {
-    flex: 1;
-    padding: 10px;
-    margin: 10px;
+.search {
+    height: 40px;
+    width: 40px;
 }
 
 .shoppingcart {
-    flex: 1;
-    padding: 10px;
-    margin: 10px;
+    height: 40px;
+    width: 40px;
 }
 
 .home {
-    flex: 1;
-    padding: 10px;
-    margin: 10px;
-}
-}
-
-@media only screen and (max-width:600px){
-    .search{
-        width: 30px;
-        height: 30px;
-    }
-    .shoppingcart{
-        width: 30px;
-        height: 30px;
-    }
-    .home{
-        width:30px;
-        height: 30px;
-    }
+    height: 40px;
+    width: 40px;
 }
 
 .navbar {
@@ -78,9 +47,10 @@ header {
     align-items: center;
     margin: 10x;
     padding: 10px;
-    justify-content: space-between;
+    justify-items: space-between;
     gap: 20px;
 }
+
 .eldenring-video {
     width: 700px;
     margin: 0 auto;
@@ -88,16 +58,10 @@ header {
 
 .video-container {
     display: flex;
+    justify-content: center;
 }
 
-@media only screen and (max-width:600px){
-    .eldenring-video {
-        margin: 1em 2em;
-        width: 100%;
-    }
-}
-
-h1{
+h1 {
     color:white;
     font-size: 2em;
     margin-left: 100px;
@@ -113,105 +77,148 @@ h1{
     gap: 50px;
 }
 
-.container{
+.gameimage-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
 }
 
-@media only screen and (min-width:600px){
-    .container {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-  }
-
-  h2{
-        color:white;
-        font-size: 2em;
-        margin-left: 100px;
-        margin-right: 100px;
-    }
-    
-@media only screen and (min-width:600px){
-    .cta-all {
-        flex-direction: row;
-        color: white;
-    }
-    .cta-all{
-        color: white;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: center;
-        margin-left: 100px;
-        margin-right: 100px;
-    }
+h2 {
+    color:white;
+    font-size: 2em;
+    text-align: center;
 }
-
-a{
+    
+a {
     color: white
 }
-
-   @media only screen and (min-width:600px){
-    .cta {
-        flex-direction: row;
-    }
-    .cta{
+.cta-all {
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+}
+.cta {
     background-image: linear-gradient(#1D2441, #5B859E);
     color: white;
-    font-size: 1.5em;
+    font-size: 1em;
     text-decoration: none;
     padding: 20px;
     border-radius: 5px;
-    width: 250px;
-    height: 30px;
-}
-}
-
-a{
-    color: white
-}
-
-@media only screen and (min-width:600px){
-    .media{
+    max-width: 130px;
+    margin: 5px;
+    display: block;
+    }
+.cta-group1, .cta-group2 {
     display: flex;
-    margin-top: 120px;
-    flex-direction: row;
-    text-align: center;
-    margin-left: 50px;
-    margin-right: 50px;
-}
+    gap: 5px;
 }
 
 .media-logo {
     margin: 20px;
 }
 
+.media {
+        display: flex;
+        margin-top: 120px;
+        flex-direction: row;
+        text-align: center;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+.about {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+}
+
+.contact {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+}
+
+.media {
+    display: flex;
+    justify-content: center;
+}
+
+.media_icons {
+    display: flex;
+}
+
+.media-links {
+    display: flex;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width:700px){
+    .logo {
+        position: static;
+        transform: translate(0%);
+        width: 200px;
+        object-fit: contain;
+    }
+    .cta-all {
+        display: flex;
+        flex-direction: column;
+    }
+    .cta-group1, .cta-group2 {
+        justify-content: center;
+    }
+}
+
 @media only screen and (max-width:600px){
-    .media-logo{
+    .search {
+        flex: 1;
+        width: 30px;
+        height: 30px;
+    }
+    .shoppingcart {
+        flex: 1;
+        width: 30px;
+        height: 30px;
+    }
+    .home {
+        flex: 1;
+        width: 30px;
+        height: 30px;
+    }
+    .eldenring-video {
+        margin: 1em 2em;
+        width: 100%;
+    }
+    .gameimage-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .media {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .media_icons {
+        display: flex;
+    }
+    .media-logo {
         height: 20px;
         width: 20px;
     }
 }
-
-.about{
-    font-size: 1.3em;
-    text-decoration: none;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 20px;
-}
-
-.contact{
-    font-size: 1.3em;
-    text-decoration: none;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 20px;
-}
+ 
+    
