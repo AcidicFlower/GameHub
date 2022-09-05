@@ -16,7 +16,6 @@ header {
     position: relative;
     object-fit: contain;
     width: 300px;
-    
 }
 
 .search {
@@ -61,28 +60,15 @@ header {
     justify-content: center;
 }
 
+.gameimage-container {
+    object-fit: cover;
+}
+
 h1 {
     color:white;
     font-size: 2em;
     margin-left: 100px;
     margin-right: 100px;
-}
-
-.image {
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    width: 300px;
-    justify-content: center;
-    gap: 50px;
-}
-
-.gameimage-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
 }
 
 h2 {
@@ -94,6 +80,7 @@ h2 {
 a {
     color: white
 }
+
 .cta-all {
     color: white;
     display: flex;
@@ -101,6 +88,7 @@ a {
     text-align: center;
     gap: 5px;
 }
+
 .cta {
     background-image: linear-gradient(#1D2441, #5B859E);
     color: white;
@@ -111,7 +99,8 @@ a {
     max-width: 130px;
     margin: 5px;
     display: block;
-    }
+}
+
 .cta-group1, .cta-group2 {
     display: flex;
     gap: 5px;
@@ -122,13 +111,13 @@ a {
 }
 
 .media {
-        display: flex;
-        margin-top: 120px;
-        flex-direction: row;
-        text-align: center;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
+    display: flex;
+    margin-top: 120px;
+    flex-direction: row;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
 
 .about {
     font-size: 1.3em;
